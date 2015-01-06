@@ -1,0 +1,38 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons" 
+	xmlns:layout="sap.ui.commons.layout" xmlns:table="sap.ui.table" 
+			controllerName="flexiblelayoutexample.MatrixLayoutView" xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<layout:MatrixLayout id="matrixLayout" layoutFixed="false">
+		<layout:MatrixLayoutRow>
+			<layout:MatrixLayoutCell>
+				
+				<table:Table id="firstTable">
+					<table:Column>
+					 	<Label text="Last Name" />
+					 	<table:template><TextField value="{lastName}"/></table:template>	
+					</table:Column>
+					<table:Column>
+					 	<Label text="Link Text" />
+					 	<table:template><TextField value="{linkText}"/></table:template>	
+					</table:Column>
+				</table:Table>
+				
+			</layout:MatrixLayoutCell>
+		</layout:MatrixLayoutRow>
+		<layout:MatrixLayoutRow>
+			<layout:MatrixLayoutCell>
+				<table:Table id="secondTable">
+					<table:Column>
+					 	<Label text="Last Name" />
+					 	<table:template><TextField value="{lastName}"/></table:template>	
+					</table:Column>
+					<table:Column>
+					 	<Label text="Link Text" />
+					 	<table:template><TextField value="{linkText}"/></table:template>	
+					</table:Column>
+				</table:Table> 
+			</layout:MatrixLayoutCell>
+		</layout:MatrixLayoutRow>
+	</layout:MatrixLayout>
+
+</core:View>
